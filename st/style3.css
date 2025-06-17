@@ -1,0 +1,88 @@
+body{
+  font-family: Arial,  sans-serif;
+  line-height:1.6 ;
+  color:#fff;
+
+  background-color: aquamarine;
+}
+header{
+  background-color: rgb(66, 85, 85);
+  position: fixed;
+  top: 0;
+  left:0;
+  color: blanchedalmond;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding:10px 20px ;
+  z-index: 1000;
+
+}
+nav{
+  display: flex;
+  gap:20px ;
+}
+nav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+main{
+
+  padding: 100px 20px 50px;
+  min-height:100vh ;
+
+}
+.dev-tags {
+  padding: 5vh 2vh;
+  max-width: 1000px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tags-title {
+  font-size: 3.2vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vh, 1fr));
+  gap: 2.5vh;
+}
+
+.tag-card {
+  background-color: rgba(255, 255, 255, 0.247);
+  padding: 3vh;
+  border-radius: 2vh;
+  box-shadow: 0 0.3vh 1vh rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.tag-card:hover {
+  transform: translateY(-0.6vh);
+  transform: scale(1.1);
+}
+
+.tag-card h3 {
+  font-size: 2.2vh;
+  margin-bottom: 1.5vh;
+  font-weight: 500;
+  color: #054d6e;
+}
+
+.tag-card p {
+  font-size: 1.6vh;
+  color: #2e245a;
+  line-height: 1.5;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.3vh 0.8vh;
+  border-radius: 0.5vh;
+  font-family: 'Courier New', monospace;
+  font-size: 1.5vh;
+}
